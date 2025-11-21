@@ -86,11 +86,12 @@ def test_calcula_estadisticas_indice():
     # Promedio: 10 / 5 = 2.0
     assert abs(promedio_urls_por_palabra - 2.0) < 1e-6
 
+print("\033c", end="")
 test_normalizar_texto()
-#test_procesar_url_en_indice()
-#test_buscar_palabra_simple()
-#test_buscar_palabras_or()
-#test_buscar_palabras_and()
-#test_procesar_url_en_indice_top_n()
-#test_calcula_estadisticas_indice()
+test_procesar_url_en_indice()
+test_buscar_palabra_simple()
+test_buscar_palabras_or()
+test_buscar_palabras_and()
+test_procesar_url_en_indice_top_n()
+test_calcula_estadisticas_indice()
 print("Todas las pruebas funcionaron correctamente.")
